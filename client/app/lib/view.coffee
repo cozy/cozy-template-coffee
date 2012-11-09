@@ -12,7 +12,7 @@ module.exports = class View extends Backbone.View
     render: ->
         # console.debug "Rendering #{@constructor.name}", @
         @beforeRender()
-        @$el.html @template()
+        @$el.html @template({})
         @afterRender()
         @
 

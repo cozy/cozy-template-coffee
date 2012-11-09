@@ -153,12 +153,14 @@ window.require.define({"lib/view": function(exports, require, module) {
 
     View.prototype.getRenderData = function() {
       var _ref;
-      return (_ref = this.model) != null ? _ref.toJSON() : void 0;
+      return {
+        model: (_ref = this.model) != null ? _ref.toJSON() : void 0
+      };
     };
 
     View.prototype.render = function() {
       this.beforeRender();
-      this.$el.html(this.template(this.getRenderData()));
+      this.$el.html(this.template({}));
       this.afterRender();
       return this;
     };
@@ -294,9 +296,7 @@ window.require.define({"lib/view_collection": function(exports, require, module)
 
     ViewCollection.prototype.renderOne = function(model) {
       var view;
-      view = new this.view({
-        model: model
-      });
+      view = new this.view(model);
       this.$el.append(view.render().el);
       this.add(view);
       return this;
