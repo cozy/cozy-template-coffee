@@ -195,6 +195,8 @@ window.require.define({"lib/view_collection": function(exports, require, module)
     __extends(ViewCollection, _super);
 
     function ViewCollection() {
+      this.renderAll = __bind(this.renderAll, this);
+
       this.renderOne = __bind(this.renderOne, this);
       return ViewCollection.__super__.constructor.apply(this, arguments);
     }
