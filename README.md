@@ -8,7 +8,7 @@ fork it and code while focusing only on your features !
 Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
     
-    git clone git://github.com/mycozycloud/cozy-tutorial.git
+    git clone git://github.com/mycozycloud/cozy-template.git
     cd cozy-tutorial
     npm install
     coffee server
