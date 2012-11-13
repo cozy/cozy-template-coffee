@@ -387,7 +387,7 @@ window.require.define({"views/templates/home": function(exports, require, module
   var buf = [];
   with (locals || {}) {
   var interp;
-  buf.push('<div id="content"><h1>Cozy template</h1><h2>Welcome</h2><ul><li> <a href="https://github.com/mycozycloud/cozy-setup">Documentation</a></li><li> <a href="https://github.com/mycozycloud">Github</a></li></ul></div>');
+  buf.push('<div id="content"><h1>Cozy template</h1><h2>Welcome</h2><ul><li> <a href="https://github.com/mycozycloud/cozy-setup/wiki">Documentation</a></li><li> <a href="https://github.com/mycozycloud/cozy-setup/wiki/Getting-started">Getting Started</a></li><li> <a href="https://github.com/mycozycloud">Github</a></li></ul></div>');
   }
   return buf.join("");
   };
