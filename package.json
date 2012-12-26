@@ -2,6 +2,7 @@
 , "version": "0.0.1"
 , "engines": ["node = 0.8.x"]
 , "description": "A template project for cozy applications"
+, "license": "MIT"
 , "repository":
   {
     "type": "git"
