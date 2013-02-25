@@ -1,5 +1,5 @@
 should = require('should')
-Client = require('request-json').Client
+Client = require('request-json').JsonClient
 app = require('../server')
 
 client = new Client "http://localhost:8888/"
