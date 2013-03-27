@@ -9,7 +9,7 @@ Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
     
     git clone git://github.com/mycozycloud/cozy-template.git
-    cd cozy-tutorial
+    cd cozy-template
     npm install
     coffee server
 
