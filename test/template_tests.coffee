@@ -1,9 +1,10 @@
-should = require('should')
-Client = require('request-json').Client
-app = require('../server')
+should = require('chai').Should()
+Client = require('request-json').JsonClient
 
 client = new Client "http://localhost:8888/"
 
+instantiateApp = require '../server'
+app = instantiateApp()
 
 describe "Test section", ->
 
@@ -12,7 +13,7 @@ describe "Test section", ->
         done()
 
     after (done) ->
-        app.close()
+        app.compound.server.close()
         done()
 
     it "Then it succeeds", ->
