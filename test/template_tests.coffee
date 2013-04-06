@@ -4,6 +4,8 @@ app = require('../server')
 
 client = new Client "http://localhost:8888/"
 
+instantiateApp = require '../server'
+app = instantiateApp()
 
 describe "Test section", ->
 
@@ -12,7 +14,7 @@ describe "Test section", ->
         done()
 
     after (done) ->
-        app.close()
+        app.compound.server.close()
         done()
 
     it "Then it succeeds", ->
