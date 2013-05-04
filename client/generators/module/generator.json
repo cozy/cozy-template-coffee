@@ -17,7 +17,7 @@
             "to": "app/views/styles/_{{name}}.styl"
         },
         {
-            "from": "view_collections.coffee.hbs",
+            "from": "view_collection.coffee.hbs",
             "to": "app/views/{{name}}s.coffee"
         }
     ],
