@@ -15,11 +15,11 @@
         {
             "from": "style.styl.hbs",
             "to": "app/views/styles/_{{name}}.styl"
-        }
+        },
         {
             "from": "view_collections.coffee.hbs",
             "to": "app/views/{{name}}s.coffee"
-        },
+        }
     ],
     "dependencies": []
 }
