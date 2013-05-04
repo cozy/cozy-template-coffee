@@ -1,2 +1,2 @@
 module.exports = (compound) ->
-    [ require('jugglingdb') ]
+    [ require('jugglingdb'), require('co-generators') ]
