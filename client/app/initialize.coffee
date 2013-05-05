@@ -12,7 +12,6 @@ $ ->
 
     # Initialize App
     CozyApp.Views.appView = new AppView = require 'views/app_view'
-    CozyApp.Views.appView.render()
 
     # Initialize Backbone History
     Backbone.history.start pushState: yes
