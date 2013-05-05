@@ -9,6 +9,10 @@
             "to": "app/views/{{name}}.coffee"
         },
         {
+            "from": "collections.coffee.hbs",
+            "to": "app/collections/{{name}}s.coffee"
+        },
+        {
             "from": "template.jade.hbs",
             "to": "app/views/templates/{{name}}.jade"
         },
