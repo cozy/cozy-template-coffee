@@ -11,3 +11,5 @@ module.exports = class {{#camelize}}{{name}}{{/camelize}}VsView extends Collecti
     initialize: ->
         @collection.on 'reset', =>
             @renderAll()
+        @collection.on 'add', (model) =>
+            @renderOne model
