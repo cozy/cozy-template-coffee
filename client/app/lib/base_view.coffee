@@ -1,16 +1,15 @@
-module.exports = class View extends Backbone.View
+module.exports = class BaseView extends Backbone.View
 
     template: ->
 
     initialize: ->
-        @render()
 
     getRenderData: ->
         model: @model?.toJSON()
 
     render: ->
         @beforeRender()
-        @$el.html @template @getRenderData()
+        @$el.html @template(@getRenderData())
         @afterRender()
         @
 

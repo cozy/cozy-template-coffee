@@ -1,11 +1,10 @@
-View      = require '../lib/view'
-AppRouter = require '../routers/app_router'
+BaseView = require '../lib/base_view'
 
-module.exports = class AppView extends View
+module.exports = class AppView extends BaseView
+
     el: 'body.application'
+    template: require('./templates/home')
 
-    template: ->
-        require('./templates/home')
+    afterRender: ->
+        console.log "write more code here !"
 
-    initialize: ->
-        @router = CozyApp.Routers.AppRouter = new AppRouter()
