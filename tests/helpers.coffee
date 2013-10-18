@@ -1,3 +1,5 @@
+
+# See cozy-fixtures documentation for testing on https://github.com/jsilvestre/cozy-fixtures#automatic-tests
 fixtures = require 'cozy-fixtures'
 
 helpers = {}
