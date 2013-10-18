@@ -4,7 +4,10 @@ americano = require 'americano'
 
 module.exports =
     template:
-        all: (doc) -> americano.defaultRequests.all # shortcut for emit doc._id, doc
+        # shortcut for emit doc._id, doc
+        all: (doc) -> americano.defaultRequests.all
+
+        # create all the requests you want!
         customRequest:
             map: (doc) ->
                 # map function
