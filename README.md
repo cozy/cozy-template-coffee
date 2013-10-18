@@ -3,6 +3,8 @@
 Cozy Template is a template project to start quickly your own application. Just
 fork it and code while focusing only on your features !
 
+Do you feel lost? No problem, check out our tutorial to get your started: http://cozy.io/hack/getting-started/
+
 # Run
 
 Clone this repository, install dependencies and run server (it requires Node.js
