@@ -5,7 +5,7 @@ americano = require 'americano'
 module.exports =
     template:
         # shortcut for emit doc._id, doc
-        all: (doc) -> americano.defaultRequests.all
+        all: americano.defaultRequests.all
 
         # create all the requests you want!
         customRequest:
