@@ -52,8 +52,9 @@ runTests = (fileList) ->
             env = "NODE_ENV=#{options.env}"
         else
             env = "NODE_ENV=test"
-        console.log "Running tests with NODE_ENV=#{env}..."
+        console.log "Running tests with #{env}..."
 
+        command = "#{env} #{command}"
         command += " #{fileList.join(" ")} "
         command += " --reporter spec --require should --compilers coffee:coffee-script --colors"
         exec command, (err, stdout, stderr) ->
