@@ -16,17 +16,19 @@ exports.config =
                 # Files in `vendor` directories are compiled before other files
                 # even if they aren't specified in order.
                 before: [
-                    'vendor/scripts/jquery-1.9.1.js'
-                    'vendor/scripts/underscore-1.4.4.js'
-                    'vendor/scripts/backbone-1.0.0.js'
+                    'vendor/javascripts/console-helper.js',
+                    'vendor/javascripts/jquery-2.1.1.min.js',
+                    'vendor/javascripts/underscore-1.6.0.min.js',
+                    'vendor/javascripts/backbone-1.1.2.min.js',
+                    'vendor/javascripts/backbone-mediator.js',
+                    'vendor/javascripts/bootstrap-3.1.1.min.js',
                 ]
 
         stylesheets:
             joinTo: 'stylesheets/app.css'
             order:
-                before: ['vendor/styles/normalize.css']
-                after: ['vendor/styles/helpers.css']
-
+                before: []
+                after: ['vendor/stylesheets/helpers.css']
         templates:
             defaultExtension: 'jade'
             joinTo: 'javascripts/app.js'
