@@ -102,7 +102,6 @@ module.exports = {
     }
   }
 };
-
 });
 
 ;require.register("initialize", function(exports, require, module) {
@@ -114,7 +113,6 @@ $(function() {
   require('lib/app_helpers');
   return app.initialize();
 });
-
 });
 
 ;require.register("lib/app_helpers", function(exports, require, module) {
@@ -132,7 +130,6 @@ $(function() {
     return _results;
   })();
 })();
-
 });
 
 ;require.register("lib/base_view", function(exports, require, module) {
@@ -179,7 +176,6 @@ module.exports = BaseView = (function(_super) {
   return BaseView;
 
 })(Backbone.View);
-
 });
 
 ;require.register("lib/view_collection", function(exports, require, module) {
@@ -288,7 +284,6 @@ module.exports = ViewCollection = (function(_super) {
   return ViewCollection;
 
 })(BaseView);
-
 });
 
 ;require.register("router", function(exports, require, module) {
@@ -318,7 +313,6 @@ module.exports = Router = (function(_super) {
   return Router;
 
 })(Backbone.Router);
-
 });
 
 ;require.register("views/app_view", function(exports, require, module) {
@@ -346,19 +340,25 @@ module.exports = AppView = (function(_super) {
   return AppView;
 
 })(BaseView);
-
 });
 
 ;require.register("views/templates/home", function(exports, require, module) {
-module.exports = function anonymous(locals, attrs, escape, rethrow, merge) {
-attrs = attrs || jade.attrs; escape = escape || jade.escape; rethrow = rethrow || jade.rethrow; merge = merge || jade.merge;
+var __templateData = function template(locals) {
 var buf = [];
-with (locals || {}) {
-var interp;
-buf.push('<div id="content"><h1>Cozy template</h1><h2>Welcome</h2><ul><li><a href="http://cozy.io/">Documentation</a></li><li><a href="http://cozy.io/hack/getting-started/">Getting Started</a></li><li><a href="https://github.com/mycozycloud">Github</a></li></ul></div>');
-}
-return buf.join("");
+var jade_mixins = {};
+var jade_interp;
+
+buf.push("<div id=\"content\"><h1>Cozy template</h1><h2>Welcome</h2><ul><li><a href=\"http://cozy.io/\">Documentation</a></li><li><a href=\"http://cozy.io/hack/getting-started/\">Getting Started</a></li><li><a href=\"https://github.com/mycozycloud\">Github</a></li></ul></div>");;return buf.join("");
 };
+if (typeof define === 'function' && define.amd) {
+  define([], function() {
+    return __templateData;
+  });
+} else if (typeof module === 'object' && module && module.exports) {
+  module.exports = __templateData;
+} else {
+  __templateData;
+}
 });
 
 ;
