@@ -1,5 +1,8 @@
 fs     = require 'fs'
 {exec} = require 'child_process'
+logger = require('printit')
+            date: false
+            prefix: 'cake'
 
 option '-f' , '--file [FILE*]' , 'test file to run'
 option ''   , '--dir [DIR*]'   , 'directory where to grab test files'
@@ -78,3 +81,20 @@ task "lint", "Run coffeelint on source files", ->
         exec command, (err, stdout, stderr) ->
             console.log stderr
             console.log stdout
+
+task 'build', 'Build CoffeeScript to Javascript', ->
+    logger.options.prefix = 'cake:build'
+    logger.info "Start compilation..."
+    command = "coffee -cb --output build/server server && " + \
+              "coffee -cb --output build/ server.coffee && " + \
+              "rm -rf build/client && mkdir build/client && " + \
+              "cd client/ && brunch build --production && cd .. && " + \
+              "cp -R client/public build/client/"
+
+    exec command, (err, stdout, stderr) ->
+        if err
+            logger.error "An error has occurred while compiling:\n" + err
+            process.exit 1
+        else
+            logger.info "Compilation succeeded."
+            process.exit 0
