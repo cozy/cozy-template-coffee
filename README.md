@@ -11,10 +11,10 @@ Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
 
     npm install -g coffee-script
-    git clone git://github.com/mycozycloud/cozy-template.git
-    cd cozy-template
+    git clone git://github.com/mycozycloud/cozy-template-coffee.git
+    cd cozy-template-coffee
     npm install
-    coffee server
+    coffee server.coffee
 
 
 # What is Cozy?
