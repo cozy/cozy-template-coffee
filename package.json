@@ -2,7 +2,7 @@
   "name": "cozy-template",
   "version": "1.0.0",
   "engines": [
-    "node = 0.108.x"
+    "node = 0.10.x"
   ],
   "description": "A template project for cozy applications",
   "license": "MIT",
