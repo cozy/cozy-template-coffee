@@ -2,7 +2,7 @@
   "name": "cozy-template",
   "version": "1.0.0",
   "engines": [
-    "node = 0.8.x"
+    "node = 0.108.x"
   ],
   "description": "A template project for cozy applications",
   "license": "MIT",
@@ -12,8 +12,8 @@
   },
   "main": "server.coffee",
   "dependencies": {
-    "americano": "0.3.6",
-    "americano-cozy": "0.2.5"
+    "americano": "0.3.11",
+    "americano-cozy": "0.2.11"
   },
   "devDependencies": {
     "should": "4.0.1",
