@@ -25,7 +25,7 @@
   },
   "scripts": {
     "test": "cake tests",
-    "start": "coffee server.coffee"
+    "start": "node build/server.js"
   },
   "cozy-permissions": {},
   "cozy-displayName": "Template"
