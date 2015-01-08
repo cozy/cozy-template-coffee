@@ -16,6 +16,15 @@ and Coffee-script)
     npm install
     coffee server.coffee
 
+If you want to build the application, be sure client side dependencies are installed
+
+    cd client && npm install && cd ..
+
+And then, whenever you want to build your application:
+
+    cake build
+
+Check the `Cakefile` for more information.
 
 # What is Cozy?
 
