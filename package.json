@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mycozycloud/cozy-template.git"
+    "url": "https://github.com/cozy/cozy-template-coffee.git"
   },
   "main": "server.coffee",
   "dependencies": {
