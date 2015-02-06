@@ -19,7 +19,7 @@ config =
     ]
 
     plugins: [
-        'americano-cozy'
+        'cozydb'
     ]
 
 module.exports = config

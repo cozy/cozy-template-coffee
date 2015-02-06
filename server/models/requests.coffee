@@ -1,11 +1,11 @@
-# See documentation on https://github.com/frankrousseau/americano-cozy/#requests
+# See documentation on https://github.com/aenario/cozydb/
 
-americano = require 'americano'
+cozydb = require 'cozydb'
 
 module.exports =
     template:
         # shortcut for emit doc._id, doc
-        all: americano.defaultRequests.all
+        all: cozydb.defaultRequests.all
 
         # create all the requests you want!
         customRequest:
