@@ -1,7 +1,7 @@
-# See documentation on https://github.com/frankrousseau/americano-cozy/#models
+# See documentation on https://github.com/aenario/cozydb/
 
-americano = require 'americano'
+cozydb = require 'cozydb'
 
-module.exports = TemplateModel = americano.getModel 'Template',
+module.exports = TemplateModel = cozydb.getModel 'Template',
     title: String
     content: String
