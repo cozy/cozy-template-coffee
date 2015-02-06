@@ -105,7 +105,7 @@ module.exports = {
 
 });
 
-;require.register("initialize", function(exports, require, module) {
+require.register("initialize", function(exports, require, module) {
 var app;
 
 app = require('application');
@@ -117,7 +117,7 @@ $(function() {
 
 });
 
-;require.register("lib/app_helpers", function(exports, require, module) {
+require.register("lib/app_helpers", function(exports, require, module) {
 (function() {
   return (function() {
     var console, dummy, method, methods, _results;
@@ -135,7 +135,7 @@ $(function() {
 
 });
 
-;require.register("lib/base_view", function(exports, require, module) {
+require.register("lib/base_view", function(exports, require, module) {
 var BaseView,
   __hasProp = {}.hasOwnProperty,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
@@ -182,7 +182,7 @@ module.exports = BaseView = (function(_super) {
 
 });
 
-;require.register("lib/view_collection", function(exports, require, module) {
+require.register("lib/view_collection", function(exports, require, module) {
 var BaseView, ViewCollection,
   __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
   __hasProp = {}.hasOwnProperty,
@@ -291,7 +291,7 @@ module.exports = ViewCollection = (function(_super) {
 
 });
 
-;require.register("router", function(exports, require, module) {
+require.register("router", function(exports, require, module) {
 var AppView, Router,
   __hasProp = {}.hasOwnProperty,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
@@ -321,7 +321,7 @@ module.exports = Router = (function(_super) {
 
 });
 
-;require.register("views/app_view", function(exports, require, module) {
+require.register("views/app_view", function(exports, require, module) {
 var AppView, BaseView,
   __hasProp = {}.hasOwnProperty,
   __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
@@ -349,7 +349,7 @@ module.exports = AppView = (function(_super) {
 
 });
 
-;require.register("views/templates/home", function(exports, require, module) {
+require.register("views/templates/home", function(exports, require, module) {
 var __templateData = function template(locals) {
 var buf = [];
 var jade_mixins = {};
