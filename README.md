@@ -3,7 +3,8 @@
 Cozy Template is a template project to start quickly your own application. Just
 fork it and code while focusing only on your features !
 
-Do you feel lost? No problem, check out our tutorial to get your started: http://cozy.io/hack/getting-started/
+Do you feel lost? No problem, check out our tutorial to get your started:
+http://cozy.io/hack/getting-started/
 
 # Run
 
@@ -11,7 +12,7 @@ Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
 
     npm install -g coffee-script
-    git clone git://github.com/mycozycloud/cozy-template-coffee.git
+    git clone git://github.com/cozy/cozy-template-coffee.git
     cd cozy-template-coffee
     npm install
     coffee server.coffee
@@ -25,6 +26,13 @@ And then, whenever you want to build your application:
     cake build
 
 Check the `Cakefile` for more information.
+
+## Tests
+
+Unit tests are in `tests` directory and can be launched with:
+
+    npm run test
+
 
 # What is Cozy?
 

@@ -1,4 +1,4 @@
-(() ->
+( ->
     # IIFE to avoid collisions with other variables
     (->
         # Make it safe to do console.log() always.
