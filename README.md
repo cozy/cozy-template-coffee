@@ -11,7 +11,7 @@ http://cozy.io/hack/getting-started/
 Clone this repository, install dependencies and run server (it requires Node.js
 and Coffee-script)
 
-    npm install -g coffee-script
+    npm install -g coffee-script brunch
     git clone git://github.com/cozy/cozy-template-coffee.git
     cd cozy-template-coffee
     npm install
