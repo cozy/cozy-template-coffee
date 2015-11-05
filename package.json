@@ -27,7 +27,8 @@
   "scripts": {
     "lint": "cake lint",
     "test": "cake tests",
-    "start": "node build/server.js"
+    "start": "node build/server.js",
+    "postinstall": "npm i -g brunch"
   },
   "cozy-permissions": {},
   "cozy-displayName": "Template"
